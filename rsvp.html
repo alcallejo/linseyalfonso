@@ -6,7 +6,7 @@
 </head>
 <body>
   <center>
-  <form onSubmit="return checkAnswer();"  target="_blank">
+  <form onSubmit="return checkAnswer();">
     <input id="answer" type="text" maxlength="55" class="box" autofocus />
     <input type="submit" class="submit" value="OK" />
   </form>
@@ -16,10 +16,8 @@
       var response = document.getElementById('answer').value;
       if (response == "madison2021")
           location = 'https://forms.gle/471AVzrU1QT5bGtL8';
-		  window.open(location, '_blank');
       else if (response == "pamplona2021")
           location = 'https://forms.gle/jNgQFybHyxhNrSLk6';
-		  window.open(location, '_blank');
       return false;
   }
   </script>
