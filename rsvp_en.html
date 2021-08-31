@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>L&A</title>
+</head>
+<body>
+  <center>
+  <form onSubmit="return checkAnswer();">
+    <input id="answer" type="text" maxlength="55" class="box"  placeholder="Event code" autofocus />
+    <input type="submit" class="submit" value="OK" />
+  </form>
+  </center>
+  <script>
+  function checkAnswer(){
+      var response = document.getElementById('answer').value;
+      if (response == "madison2021")
+          location = 'https://docs.google.com/forms/d/e/1FAIpQLSc6qRAq5WMequJNHP1wjWXlHXmK0USZagTMI8f7Ret8gUKuOg/viewform?usp=sf_link';
+      else if (response == "pamplona2022")
+          location = 'https://docs.google.com/forms/d/e/1FAIpQLSetHU4-ai1fI8eBk-YZFQ2ypEFfOr8gbOGJwMoDypn7rXQHmQ/viewform?usp=sf_link';
+      else if (response == "world2021")
+          location = 'https://docs.google.com/forms/d/e/1FAIpQLSflDQlvrf05B3Q_B0GfO-lE0J2QNDHqE--jjf_HlsW_IIS4IQ/viewform?usp=sf_link';		  
+      return false;
+  }
+  </script>
+</body>
+</html>
